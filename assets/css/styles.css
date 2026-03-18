@@ -39,6 +39,10 @@ body {
     font-family: "Brandon Grotesque";
 }
 
+main {
+    min-height: calc(100vh - 124.4px - 97px);
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
