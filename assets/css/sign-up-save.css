@@ -1,0 +1,20 @@
+main {
+    background: #faf3ed;
+    min-height: calc(100vh - 124.4px - 127px);
+    padding: 60px 0;
+}
+
+#lightbox-inline-form-6eaf264a-bbe4-47b2-bffb-474030a8dc25 {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    padding-top: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+    main {
+        padding: 40px 0 20px;
+    }
+}
