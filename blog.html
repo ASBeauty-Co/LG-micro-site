@@ -33,6 +33,13 @@
         <!--START Digioh Low Impact Javascript-->
         <script defer type='text/javascript' src='https://forms.laurageller.com/w37htfhcq2/vendor/6df7ca64-ce54-423e-8bcb-cc352c4d2b86/lightbox_speed.js'></script>
         <!--END Digioh Low Impact Javascript-->
+        <style>
+            .geller-img--left  { float: left;  width: 33%; margin: 0 1.5rem 1rem 0; }
+            .geller-img--right { float: right; width: 33%; margin: 0 0 1rem 1.5rem; }
+            @media (max-width: 767px) {
+                .geller-img { float: none; width: 100%; margin: 0 0 1rem 0; }
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -56,23 +63,17 @@
             <div id="lightbox-inline-form-82d7541e-4696-4f1a-a0a1-0cf87a95bd63" style="text-align: center; margin:0 auto;"></div>
         </div>
         
-        <section class="bg-secondary">
+        <section id="geller-gals" class="bg-secondary">
             <div class="max-w-3xl mx-auto px-4 py-12 md:py-16">
                <div class="space-y-6 text-center">
                   <h2 class="font-display text-3xl md:text-4xl font-bold">Hi Geller Gal,</h2>
-                  <div class="flex flex-col md:flex-row gap-8 items-start">
-                     <div class="md:w-1/3 flex-shrink-0"><img src="/assets/images/lg_1.png" alt="Laura Geller" class="w-full rounded-lg"></div>
-                     <div class="md:w-2/3 space-y-4 text-foreground/80 text-lg leading-relaxed text-left">
-                        <p>For nearly 30 years, I’ve helped women everywhere rediscover their love of makeup again with my lightweight, flattering, and downright foolproof products – all formulated especially for mature skin!</p>
-                        <p>Some of my greatest makeup innovations are about to become essentials in your beauty routine, like my <strong>Baked Balance-n-Brighten Foundation</strong>, the weightless makeup that never creases in fine lines! Or my incredible <strong>Spackle Primers</strong> that hydrate, prep, and blur the look of imperfections in one step.</p>
-                     </div>
-                  </div>
-                  <div class="flex flex-col md:flex-row-reverse gap-8 items-start mt-8">
-                     <div class="md:w-1/3 flex-shrink-0"><img src="/assets/images/lg_2.png" alt="Laura Geller applying makeup" class="w-full rounded-lg"></div>
-                     <div class="md:w-2/3 space-y-4 text-foreground/80 text-lg leading-relaxed text-left">
-                        <p>In this guide, you'll find some of my easy tips and tricks, helpful how-tos, and incredible values on my award-winning makeup that I know you're going to love.</p>
-                        <p class="font-display text-xl italic">So let's dive in Geller Gals! It's your time to shine!</p>
-                     </div>
+                  <div class="text-foreground/80 text-lg leading-relaxed text-left" style="overflow: hidden;">
+                     <img src="/assets/images/lg_1.png" alt="Laura Geller" class="rounded-lg geller-img geller-img--left">
+                     <p style="margin-bottom: 1rem;">For nearly 30 years, I’ve helped women everywhere rediscover their love of makeup again with my lightweight, flattering, and downright foolproof products – all formulated especially for mature skin!</p>
+                     <p style="margin-bottom: 1rem;">Some of my greatest makeup innovations are about to become essentials in your beauty routine, like my <strong>Baked Balance-n-Brighten Foundation</strong>, the weightless makeup that never creases in fine lines! Or my incredible <strong>Spackle Primers</strong> that hydrate, prep, and blur the look of imperfections in one step.</p>
+                     <img src="/assets/images/lg_2.png" alt="Laura Geller applying makeup" class="rounded-lg geller-img geller-img--right">
+                     <p style="margin-bottom: 1rem;">In this guide, you’ll find some of my easy tips and tricks, helpful how-tos, and incredible values on my award-winning makeup that I know you’re going to love.</p>
+                     <p class="font-display text-xl italic">So let’s dive in Geller Gals! It’s your time to shine!</p>
                   </div>
                </div>
             </div>
