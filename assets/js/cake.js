@@ -1,7 +1,5 @@
-// Dynamic Cake iFrame 
-<iframe id="ckm-pixel" height="1" width="1" frameborder="0"></iframe>
-<script>
-(function () {
+// Dynamic Cake iFrame — r from request_id or ckmreqid
+document.addEventListener("DOMContentLoaded", function () {
   var params = new URLSearchParams(window.location.search);
   var sessionId =
     params.get("request_id") ||
@@ -12,9 +10,18 @@
   var src = sessionId
     ? base + "&r=" + encodeURIComponent(sessionId)
     : base;
-  document.getElementById("ckm-pixel").src = src;
-})();
-</script>
+  var iframe = document.getElementById("ckm-pixel");
+  if (!iframe) {
+    iframe = document.createElement("iframe");
+    iframe.id = "ckm-pixel";
+    iframe.height = "1";
+    iframe.width = "1";
+    iframe.setAttribute("frameborder", "0");
+    document.body.appendChild(iframe);
+  }
+  iframe.src = src;
+});
+
 
 // DCP Click
 document.addEventListener('DOMContentLoaded', () => {
