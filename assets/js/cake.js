@@ -1,4 +1,4 @@
-// Dynamic Cake iFrame — r from request_id or ckmreqid
+// Dynamic Cake iFrame =r from request_id or ckmreqid
 document.addEventListener("DOMContentLoaded", function () {
   var params = new URLSearchParams(window.location.search);
   var sessionId =
