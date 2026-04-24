@@ -1,3 +1,21 @@
+// Dynamic Cake iFrame 
+<iframe id="ckm-pixel" height="1" width="1" frameborder="0"></iframe>
+<script>
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var sessionId =
+    params.get("request_id") ||
+    params.get("ckmreqid") ||
+    "";
+  var base =
+    "https://alchemyworx.cakeengine.net/p.ashx?o=3&e=2&t=TRANSACTION_ID";
+  var src = sessionId
+    ? base + "&r=" + encodeURIComponent(sessionId)
+    : base;
+  document.getElementById("ckm-pixel").src = src;
+})();
+</script>
+
 // DCP Click
 document.addEventListener('DOMContentLoaded', () => {
     const cookieDomain = 'alchemyworx.cakeengine.net';
