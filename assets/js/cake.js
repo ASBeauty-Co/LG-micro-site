@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     params.get("ckmreqid") ||
     "";
   var base =
-    "https://alchemyworx.cakeengine.net/p.ashx?o=3&e=2&t=TRANSACTION_ID";
+    "https://alchemyworx.cakeengine.net/p.ashx?e=2&t=TRANSACTION_ID";
   var src = sessionId
     ? base + "&r=" + encodeURIComponent(sessionId)
     : base;
