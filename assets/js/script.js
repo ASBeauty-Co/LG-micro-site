@@ -1,3 +1,22 @@
+// New Solve Code START 
+
+!(function (sdkUrl, apiUrl, apiKey) {
+window.slv = window.slv || {
+config: { sdkUrl, apiUrl, apiKey },
+loaded: false,
+ready: (f) => {
+(window.slv.q = window.slv.q || []).push(f);
+},
+};
+var e = document.createElement("script");
+e.type = "text/javascript";
+e.async = true;
+e.src = sdkUrl;
+document.head.appendChild(e);
+})("https://sdk.solvedata.app/sdk/sdk.js", "https://solve.laurageller.com", "pub_sdk_h4AgDY6g63WH6ZqM");
+
+// New Solve Code END 
+
 var swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
