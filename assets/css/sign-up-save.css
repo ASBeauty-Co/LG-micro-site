@@ -26,4 +26,10 @@ footer {
     main {
         padding: 40px 0 20px;
     }
+    .sign-up-save-container {
+        padding: 0;
+    }
+    .sign-up-save-container div[aria-label="Inline Form"] {
+        margin: 0 auto;
+    }
 }
