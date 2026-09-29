@@ -13,6 +13,10 @@ main {
     padding: 60px 0;
 }
 
+.sign-up-save-container div[aria-label="Inline Form"] {
+    margin: 0 auto;
+}
+
 #lightbox-inline-form-6eaf264a-bbe4-47b2-bffb-474030a8dc25 {
     display: flex;
     justify-content: center;
@@ -29,7 +33,5 @@ footer {
     .sign-up-save-container {
         padding: 0;
     }
-    .sign-up-save-container div[aria-label="Inline Form"] {
-        margin: 0 auto;
-    }
+    
 }
